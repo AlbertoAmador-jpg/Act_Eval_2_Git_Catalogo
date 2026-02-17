@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css" />
 
     <style>
+        /* styles.css */
         * {
             box-sizing: border-box;
         }
@@ -58,6 +59,24 @@
             border: 0;
             border-radius: 10px;
             background: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .btn2 {
+            padding: 10px 14px;
+            border: 0;
+            border-radius: 10px;
+            background: red;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .btn3 {
+            padding: 10px 14px;
+            border: 0;
+            border-radius: 10px;
+            background: blue;
             color: #fff;
             cursor: pointer;
         }
@@ -129,8 +148,8 @@
             <input id="yearInput" type="number" placeholder="Ej: 2014" />
 
             <div class="row">
-                <button id="addBtn" class="btn">Añadir película</button>
-                <button id="deleteBtn" class="btn">Eliminar película</button>
+                <button id="addBtn" class="btn2">Añadir película</button>
+                <button id="deleteBtn" class="btn3">Eliminar película</button>
                 <button id="editBtn" class="btn">Editar película</button>
             </div>
 
@@ -146,6 +165,7 @@
     </main>
 
     <script src="app.js">
+        // app.js
         const titleInput = document.getElementById("titleInput");
         const yearInput = document.getElementById("yearInput");
 
